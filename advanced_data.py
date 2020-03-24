@@ -97,7 +97,7 @@ print(Bank)
 
 # Code here
 
-Transaction ={
+transactions ={
     "Alex": {
         "sweater": 100
     },
@@ -108,7 +108,7 @@ Transaction ={
         "scarf": 500
     }
 }
-print(Transaction)
+print(transactions)
 
 
 
@@ -130,11 +130,11 @@ print(Transaction)
 
 # Code here
 
-Transaction["Jason"] = {"wallet": 250}
-Transaction["Michael"] = {"pair of sneakers": 50}
-Transaction["Andrew"] = {"t-shit": 20, "hoodie": 30}
-print(Transaction)
-print(price(Transaction["Andrew"]["hoodie"]))
+transactions["Jason"] = {"wallet": 250}
+transactions["Michael"] = {"pair of sneakers": 50}
+transactions["Andrew"] = {"t-shit": 20, "hoodie": 30}
+print(transactions)
+print(price(transactions["Andrew"]["hoodie"]))
 
 
 
@@ -154,10 +154,10 @@ print(price(Transaction["Andrew"]["hoodie"]))
 
 # Code here
 
-Transaction["Jason"]["wallet"] = 100
-Transaction["Alex"]["sweater"] = 20
-Transaction["Henry"]["scarf"] = 200
-print(Transaction)
+transactions["Jason"]["wallet"] = 100
+transactions["Alex"]["sweater"] = 20
+transactions["Henry"]["scarf"] = 200
+print(transactions)
 
 
 
@@ -170,14 +170,14 @@ print(Transaction)
 # Code here
 
 entrynumber = 0
-for x in Transaction:
-    for y in Transaction[x]:
-        Value = Transaction[x][y]
+for x in transactions:
+    for y in transactions[x]:
+        Value = transactions[x][y]
         DiscountValue = Value / 10 * 9
-        Transaction[x][y] = DiscountValue
+        transactions[x][y] = DiscountValue
         print(DiscountValue)
 
-print(Transaction)
+print(transactions)
 
 
 
